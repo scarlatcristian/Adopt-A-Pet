@@ -42,7 +42,7 @@ body {
 }
 
 .logo {
-  height: 75px;
+  height: 5rem;
 }
 
 .text-box {
@@ -55,6 +55,7 @@ body {
 
 .heading-primary {
   color: #fff;
+  backface-visibility: hidden;
   text-transform: uppercase;
 }
 .heading-primary-main {
@@ -62,10 +63,48 @@ body {
   font-size: 30px;
   font-weight: 400;
   letter-spacing: 10px;
+  animation: moveInLeft 1s ease-out;
 }
 .heading-primary-sub {
   display: block;
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 20px;
+  animation: moveInRight 1s ease-out;
 }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-6rem);
+  }
+  80% {
+    transform: translateX(0.6rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(6rem);
+  }
+  80% {
+    transform: translateX(-0.6rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* .btn {
+  background-color: #fff;
+  border: none;
+  border-radius: 40px;
+  height: 3rem;
+  width: 10rem;
+} */
