@@ -41,8 +41,44 @@ body {
   left: 40px;
 }
 
-.logo {
+.logo-right {
   height: 5rem;
+  position: absolute;
+  top: 30px;
+  left: 60px;
+  rotate: 30deg;
+  margin: 10px;
+  animation: pawAppearRight 1.5s ease-in;
+}
+
+.logo-left {
+  height: 5rem;
+  rotate: -15deg;
+  animation: pawAppearLeft 1.5s ease-in;
+}
+
+@keyframes pawAppearLeft {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pawAppearRight {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .text-box {
