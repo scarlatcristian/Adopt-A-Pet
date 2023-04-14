@@ -166,6 +166,77 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   transform: translateY(2px); }
 
+.card {
+  perspective: 1500rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 47rem; }
+  .card__side {
+    height: 47rem;
+    transition: all 1s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    .card__side--front {
+      background-color: #fff; }
+    .card__side--back {
+      transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #ff6000, #ffa559); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #5643fa, #2998ff); }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0deg); }
+  .card__picture {
+    background-size: cover;
+    background-position: center;
+    height: 23rem;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    .card__picture-1 {
+      background-image: url(../img/pet-dog1.jpeg); }
+    .card__picture-2 {
+      background-image: url(../img/pet-cat.jpeg); }
+    .card__picture-3 {
+      background-image: url(../img/pet-dog2.jpeg); }
+  .card__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: #fff;
+    position: absolute;
+    top: 18rem;
+    right: 1rem; }
+  .card__heading-span {
+    padding: 1rem 1.5rem; }
+    .card__heading-span--1 {
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, rgba(255, 96, 0, 0.85), rgba(255, 165, 89, 0.85)); }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right bottom, rgba(86, 67, 250, 0.85), rgba(41, 152, 255, 0.85)); }
+  .card__details {
+    padding: 3rem; }
+    .card__details ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto; }
+      .card__details ul li {
+        text-align: center;
+        font-size: 2.2rem;
+        padding: 1rem; }
+        .card__details ul li:not(:last-child) {
+          border-bottom: 1px solid #f7f7f7; }
+
 .composition {
   position: relative; }
   .composition__photo {
@@ -291,10 +362,15 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right, rgba(255, 96, 0, 0.8), rgba(255, 230, 199, 0.8)), url("../img/features2.webp");
+  background-image: linear-gradient(to right, rgba(255, 96, 0, 0.8), rgba(255, 230, 199, 0.8)), url("../img/features.webp");
   background-size: cover;
   background-position: center;
   transform: skewY(-7deg);
   margin-top: -10rem; }
   .section-features > * {
     transform: skewY(7deg); }
+
+.section-pets {
+  background-color: #ffe6c7;
+  padding: 25rem 0 50rem 0;
+  margin-top: -10rem; }

@@ -12,7 +12,7 @@
       rgba($color-primary-dark, 0.8),
       rgba($color-accent, 0.8)
     ),
-    url("../img/features2.webp");
+    url("../img/features.webp");
   background-size: cover;
   background-position: center;
   transform: skewY(-7deg);
@@ -20,4 +20,10 @@
   & > * {
     transform: skewY(7deg);
   }
+}
+
+.section-pets {
+  background-color: $color-accent;
+  padding: 25rem 0 50rem 0;
+  margin-top: -10rem;
 }
