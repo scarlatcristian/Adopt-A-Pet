@@ -148,4 +148,24 @@
       }
     }
   }
+
+  &__backside {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
+
+  &__adopt {
+    text-align: center;
+    color: $color-white;
+    margin-bottom: 6rem;
+  }
+
+  &__adopt-details {
+    font-size: 3rem;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
 }
