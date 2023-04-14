@@ -80,11 +80,29 @@ body {
     transform: skewY(2deg) skewX(-15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: start; }
+
+.paragraph {
+  font-size: 1.6rem;
+  text-align: start; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
 .u-center-text {
   text-align: center; }
 
-.u-margin-bottom-8 {
+.u-margin-bottom-big {
   margin-bottom: 8rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -128,17 +146,25 @@ body {
 .btn--animated {
   animation: moveInBottom 0.5s ease-out 0.3s backwards; }
 
-@media (max-width: 800px) {
-  .header__logo-box {
-    position: absolute;
-    top: 2rem;
-    left: 2rem; }
-  .header__logo--right {
-    height: 5rem;
-    left: 1.5rem;
-    top: 4rem; }
-  .header__logo--left {
-    height: 5rem; } }
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  color: #ff6000;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #ff6000;
+  padding: 3px;
+  transition: all 0.2s; }
+
+.btn-text:hover {
+  color: #fff;
+  border-bottom: 1px solid #ff6000;
+  background-color: #ff6000;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  transform: translateY(2px); }
 
 .header {
   height: 95vh;
@@ -199,6 +225,18 @@ body {
 @media (max-width: 400px) {
   .header__logo-box {
     opacity: 0; } }
+
+@media (max-width: 800px) {
+  .header__logo-box {
+    position: absolute;
+    top: 2rem;
+    left: 2rem; }
+  .header__logo--right {
+    height: 5rem;
+    left: 1.5rem;
+    top: 4rem; }
+  .header__logo--left {
+    height: 5rem; } }
 
 .section-about {
   background-color: #ffe6c7;
