@@ -328,7 +328,7 @@ body {
     margin-bottom: 6rem; }
   .card__adopt-details {
     font-size: 3rem;
-    font-weight: 100;
+    font-weight: 300;
     text-transform: uppercase; }
   @media (max-width: 56.25em) {
     .card {
@@ -542,12 +542,13 @@ body {
       padding-left: 7rem; } }
   @media (max-width: 37.5em) {
     .story {
-      width: 100%;
-      padding: 4rem;
-      padding-left: 7rem;
+      width: 75%;
       transform: skewX(0); } }
   .story > * {
     transform: skewX(12deg); }
+    @media (max-width: 37.5em) {
+      .story > * {
+        transform: skewX(0); } }
   .story__shape {
     width: 15rem;
     height: 15rem;
