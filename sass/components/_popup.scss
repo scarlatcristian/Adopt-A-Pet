@@ -86,10 +86,10 @@
     &:visited {
       display: inline-block;
       position: absolute;
-      top: 2.5rem;
-      right: 2.5rem;
+      top: -1rem;
+      right: 1rem;
       font-size: 8rem;
-      color: $color-white;
+      color: $color-grey;
       text-decoration: none;
       transition: all 0.2s;
       line-height: 1;
