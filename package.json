@@ -4,7 +4,8 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css --watch"
+    "compile:sass": "node-sass sass/main.scss css/style.css --watch",
+    "compress:css": "node-sass css/style.css css/style.min.css --output-style compressed"
   },
   "repository": {
     "type": "git",

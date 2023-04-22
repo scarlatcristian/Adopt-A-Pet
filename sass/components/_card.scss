@@ -174,8 +174,9 @@
     text-transform: uppercase;
   }
 
-  @include respond(tab-port) {
-    // FUNCTIONALITY
+  // @include respond(tab-port) {
+  // FUNCTIONALITY
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     height: auto;
     border-radius: 3px;
     background-color: $color-white;
@@ -203,7 +204,7 @@
 
     //   FRONT-SIDE STYLING
     &__picture {
-      background-position: center -20rem;
+      background-position: center;
       height: 30rem;
     }
 

@@ -35,3 +35,8 @@ base {
     padding: 0;
   }
 }
+
+::selection {
+  background-color: $color-primary-dark;
+  color: $color-white;
+}
